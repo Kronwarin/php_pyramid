@@ -1,9 +1,8 @@
 <pre style="
-font-family:'courier new';font-size:30px;">
+font-family:'mono';font-size:30px;">
 <script>
 var tRow = 7;
 for(row=1; row <= tRow; row++) {
- // Column have 4 parts
  for(col=1;col<=tRow - row + 1;col++){ 
   document.write(" "); 
  }

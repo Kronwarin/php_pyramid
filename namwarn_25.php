@@ -1,5 +1,5 @@
 <pre style="
-font-family:'courier new';font-size:30px;">
+font-family:'mono';font-size:30px;">
 <script>
 for(row=1;row<=5;row++) {
 	for(col=1;col<=5-row;col++) {
