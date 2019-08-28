@@ -1,15 +1,15 @@
-<pre style="
-font-family:'mono';font-size:30px;">
-<script>
-for(i=1;i<=5;i++)
-{
-	document.write(i);
-	document.write("*");
-	document.write((i*2)-1);
-	document.write("*");
-	document.write(i*2);
-	document.write("\n");
+<?php include ("ww.php");?>
+<?php
+for($namwarn=0;$namwarn<=4;$namwarn++) {
+	echo($namwarn+1);
+	echo("*");
+	for($col=1;$col<=1;$col++){
+		echo($col+$namwarn+$namwarn);
+	}
+	echo("*");
+	for($col=2;$col<=2;$col++){
+		echo($col+$namwarn+$namwarn);
+	}
+	echo "<br/>";
 }
-
-</script>
-</pre>
+?>

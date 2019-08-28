@@ -1,48 +1,45 @@
-<pre style="
-font-family:'mono';font-size:30px;">
-<script>
-for(row=1;row<=3;row++) {
-	for(col=1;col<=3-row;col++) {
+<?php include ("ww.php");?>
+<?php
+for($namwarn=1;$namwarn<=3;$namwarn++) {
+	for($col=1;$col<=3-$namwarn;$col++) {
 		
-		document.write(" ");
+		echo (" ");
 	}
-		document.write("*");
-	for(col=2;col<=row;col++){
-		document.write(col);
+		echo ("*");
+	for($col=2;$col<=$namwarn;$col++){
+		echo ($col);
 	}
-	for(col=row;col<=row;col++) {
+	for($col=$namwarn;$col<=$namwarn;$col++) {
 		
-		document.write(col);
+		echo ($col);
 	}
-	for(col=row;col>=2;col--){
-		document.write(col);
+	for($col=$namwarn;$col>=2;$col--){
+		echo ($col);
 	}
-		document.write("*");
-	for(col=1;col<=3-row;col++) {
+		echo ("*");
+	for($col=1;$col<=3-$namwarn;$col++) {
 		
-		document.write(" ");
+		echo (" ");
 	}
-		document.write("\n");
+		echo "<br>";
 }
-for(row=2;row>=1;row--) {
-	for(col=1;col<=3-row;col++) {
-		document.write(" ");
+for($namwarn=2;$namwarn>=1;$namwarn--) {
+	for($col=1;$col<=3-$namwarn;$col++) {
+		echo (" ");
 	}
 	
-		document.write("*");
-	for(col=1;col<=row;col++){
-		document.write(row);
+		echo ("*");
+	for($col=1;$col<=$namwarn;$col++){
+		echo ($namwarn);
 	}
 	
-	for(col=2;col<=row;col++){
-		document.write(col);
+	for($col=2;$col<=$namwarn;$col++){
+		echo ($col);
 	}
-		document.write("*");
-	for(col=1;col<=3-row;col++) {
-		document.write(" ");
+		echo ("*");
+	for($col=1;$col<=3-$namwarn;$col++) {
+		echo (" ");
 	}
-	document.write("\n");
+	echo "<br>";
 }
-
-</script>
-</pre>
+?>

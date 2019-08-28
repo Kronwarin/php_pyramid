@@ -1,20 +1,18 @@
-<pre style="
-font-family:'mono';font-size:30px;">
-<script>
-for(row=1;row<=5;row++) {
-	for(col=1;col<=5-row;col++) {
-		document.write(" ");
+<?php include ("ww.php");?>
+<?php
+for($namwarn=1;$namwarn<=5;$namwarn++) {
+	for($col=1;$col<=5-$namwarn;$col++) {
+	echo(" ");
 	}
-	for(col=1;col<=row;col++){
-		document.write(col);
+	for($col=1;$col<=$namwarn;$col++){
+		echo($col);
 	}
-	for(col=row;col<=row;col++){
-		document.write(6-row);
+	for($col=$namwarn;$col<=$namwarn;$col++){
+		echo(6-$namwarn);
 	}
-	for(col=row;col>=1;col--){
-		document.write(col);
+	for($col=$namwarn;$col>=1;$col--){
+		echo($col);
 	}
-	document.write("\n")
+	echo "<br/>";
 }
-</script>
-</pre>
+?>

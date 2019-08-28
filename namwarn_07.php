@@ -1,19 +1,19 @@
-<pre style="
-font-family:'mono';font-size:30px;">
-<script>
-var tRow = 7;
-for(row=1; row <= tRow; row++) {
- for(col=1;col<=tRow - row + 1;col++){ 
-  document.write(" "); 
- }
- for(col=1; col <= row ; col++) { 
-  document.write( col ); 
- }
- document.write( row );
- for(col=row; col >= 1 ; col--) { 
-  document.write( col ); 
- }
- document.write("\n");
+<?php include ("ww.php");?>
+<?php
+for($namwarn=1;$namwarn<=7;$namwarn++) {
+	for($col=0;$col<=7-$namwarn;$col++) {
+	echo(" ");
+	}
+	for($col=1;$col<=1;$col++){
+		echo($col);
+	}
+	for($col=3;$col<=1+$namwarn;$col++){
+		echo($col-1);
+	}
+		echo($namwarn);
+	for($col=$namwarn;$col>=1;$col--){
+		echo($col);
+	}
+	echo "<br/>";
 }
-</script>
-</pre>
+?>
